@@ -11,7 +11,7 @@ collections:
   - name: pages
     label: Pages
     label_singular: Page
-    folder: content/pages
+    folder: src/content/pages
     create: true
     nested:
       depth: 3
@@ -22,3 +22,4 @@ collections:
       - { name: body, label: Body, widget: markdown }
       - { name: keywords, label: Keywords, widget: list }
       - { name: visible, label: Visible, widget: boolean, default: false }
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
