@@ -1,4 +1,0 @@
----
-title: Primero
----
-Lorem ipsum
