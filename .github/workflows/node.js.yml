@@ -15,5 +15,9 @@ jobs:
 
     - name: Install dependencies
       run: yarn
-      run: yarn format
-      run: yarn lint
+
+    - name: Format
+      run: yarn
+
+    - name: Lint
+      run: yarn
