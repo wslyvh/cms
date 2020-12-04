@@ -1,6 +1,6 @@
 ---
-identifier: second
+identifier: two
 title: Dos
 order: 2
 ---
-2
+Dos

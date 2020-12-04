@@ -1,4 +1,6 @@
 ---
-title: EN
+identifier: default
+title: Default Page
+order: 1
 ---
-EN Body
+English Default page

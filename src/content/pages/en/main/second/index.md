@@ -1,6 +1,6 @@
 ---
-identifier: second
+identifier: two
 title: Two
 order: 2
 ---
-2
+Two

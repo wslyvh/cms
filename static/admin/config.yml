@@ -3,7 +3,7 @@ backend:
   repo: wslyvh/cms
   branch: main
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: static/assets/uploads/images
 public_folder: /assets/uploads/images
 
@@ -17,12 +17,23 @@ collections:
     label: 'Pages'
     label_singular: 'Page'
     folder: 'src/content/pages'
+    identifier_field: id
     create: true
     i18n: true
     nested:
       depth: 3 
     fields:
+      - { name: 'identifier', label: 'id', widget: 'string', i18n: 'duplicate' }
       - { name: 'title', label: 'Title', widget: 'string', i18n: true }
       - { name: 'body', label: 'Body', widget: 'markdown', i18n: true }
       - { name: 'order', label: 'Order', widget: 'number', i18n: 'duplicate', required: false, value_type: 'int', min: 1, max: 1000, step: 1 }
-    meta: { path: { name: 'path', label: 'Path', widget: 'string', i18n: false, index_file: 'index', hint: 'Path can be a sub-folder (e.g. tickets/builder)' } }
+    meta: { 
+      path: { 
+        name: 'path', 
+        label: 'Path', 
+        widget: 'string', 
+        i18n: false, 
+        index_file: 'index', 
+        hint: 'Path can be a sub-folder (e.g. main/sub)' 
+      } 
+    }

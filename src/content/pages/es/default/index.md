@@ -1,4 +1,6 @@
 ---
-title: ES
+identifier: default
+title: Defecto
+order: 1
 ---
-ES Body
+Spanish Default page
