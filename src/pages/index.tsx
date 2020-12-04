@@ -4,7 +4,7 @@ import DefaultLayout from "src/components/layouts/default"
 export default function Index() {
   return (
     <DefaultLayout>
-      <p>Hello Devcon!</p>
+      <p>Hello CMS!</p>
     </DefaultLayout>
   )
 }

@@ -1,4 +1,0 @@
----
-title: faq
-visible: true
----

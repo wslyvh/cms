@@ -7,5 +7,13 @@ module.exports = {
     'gatsby-plugin-root-import',
     'gatsby-plugin-typescript',
     'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'cms-md-content',
+        path: `${__dirname}/src/content`,
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 }
